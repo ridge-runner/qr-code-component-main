@@ -1,0 +1,77 @@
+/* ============== STYLE SHEET FOR QR CODE COMPONENT ============= */
+
+/* COLOR VARIABLES */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(218, 44%, 22%);
+    --grey: grey;
+
+    font-size: 15px;
+    --font-primary: "Outfit", sans-serif;
+    --font-wt-body: 400;
+    --font-wt-bold: 700;
+}
+
+/* STYLES */
+
+/* Mobile: 375px; Desktop: 1440px */
+body {
+    background-color: var(--light-grey);
+    display:grid;
+    grid-template-areas:
+    "...... card ....."
+    "footer footer footer";
+    justify-items: center;
+    align-items: center;
+}
+.card {
+    grid-area: card;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    ;
+
+    width: 375px;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+
+       
+}
+.card>img {
+    
+    border-radius: 15px; 
+    width:100%;
+
+}
+
+.card>h1 {
+    padding: 10px;
+    margin: 1rem 1rem auto auto;
+
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+    font-weight: var(--font-wt-bold);
+    text-align: center; 
+    line-height: 27px; 
+    color: var(--grayish-blue);
+}
+
+.card>span {   
+    font-family: var(--font-primary);
+    font-weight:var(--font-wt-body);
+    text-align: center;
+    color: var(--grey);
+    padding: 0 2.7rem 2rem 2.7rem;
+}
+
+footer {
+    grid-area: footer;
+    margin: auto;
+    color: var(--grayish-blue); 
+
+}
