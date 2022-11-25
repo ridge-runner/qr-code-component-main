@@ -16,5 +16,7 @@
 .prettierignore
 
 # Other files to ignore.
-./notes.md
-./README-template.md
+
+README-template.md
+.gitignore
+notes.md
